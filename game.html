@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="outter-container-ext" id="outter-container">
+        <div class="filters-container" id="filters-container">
+            <div class="filters-title-container">
+                <h2>Filters</h2>
+            </div>
+            <div class="category-selection" id="category-select">
+                <label for="select-a-category">Select a Category</label>
+                <select name="" id="select-a-category" required>
+                    <option value="00">Any Category</option>
+                </select>
+            </div>
+            <div class="number-of-questions">
+                <label for="select-a-number-questions">Select Number Of Questions</label>
+                <select name="" id="select-a-number-questions" required>
+                    <option value="0000">Any Number</option>
+                </select>
+            </div>
+            <div class="selection-difficulty">
+                <label for="select-difficulty-questions">Select Questions Difficulty</label>
+                <select name="" id="select-difficulty-questions" required>
+                    <option value="000">Any Difficulty</option>
+                </select>
+            </div>
+            <div class="type-of-answer">
+                <label for="select-a-type">Select Type Of Answers</label>
+                <select name="" id="select-a-type" required>
+                    <option value="0">Any Type</option>
+                    <option value="multiple">Multiple Options</option>
+                    <option value="boolean">True/False</option>
+                </select>
+            </div>
+            <div class="button-container">
+                <button onclick="getValuesForURL()"  class="button-apply"> Apply Filters</button>
+            </div>
+        </div>
+    </div>
+    <div id="questions-html-section">
+        
+    </div>  
+    
+    <script src="app.js"></script>
+</body>
+</html>
